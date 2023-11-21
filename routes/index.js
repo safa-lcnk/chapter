@@ -1,7 +1,7 @@
+const { chapterForm } = require('../controllers/chapterForm.controller')
+
 const router = require('express').Router()
 
-router.get('/', (req,res) => {
-    res.render('home')
-})
+router.get('/', chapterForm)
 
 module.exports = router
