@@ -9,18 +9,10 @@ html(lang="fr")
         link(rel="stylesheet", href="/css/style.css")
         title Chapter
     body 
-        .d-flex.flex-row.justify-content-center
-            block content
+        block content
+            .d-flex.flex-row.justify-content-center
                 h1 Chapter form
-                    form(action="" method="post")
-                        .card.tweet-element
-                            .d-flex.justify-content-end
-                                //- a(href='#')
-                                //-     i.fas.fa-pen.p-3
-                            p test 
-                            .card-body
-                            .card-actions.d-flex.flex-row.justify-content-around
-                                i.fa-regular.fa-heart 
-                                i.fas.fa-retweet 
-                                i.fa-regular.fa-message 
-                                i.fas.fa-trash
+            include chapter-form/chapter-form.pug
+            .d-flex.justify-content-center.pt-4
+                h1 Liste des chapitres
+            include chapter-list/chapter-list.pug

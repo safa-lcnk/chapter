@@ -1,0 +1,10 @@
+.d-flex.flex-row.justify-content-center
+    .chapter-form
+        form(action="/" method="post")
+            p Title:
+            input(type="text" name="title")
+            p Number of lessons:
+            input(type="number" min="0" name="lesson")
+            p active 
+                input(type="checkbox")      
+            input.btn.btn-primary(type="submit" value="Submit")
